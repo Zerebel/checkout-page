@@ -16,7 +16,361 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    
+  <body class="font-montserrat">
+    <div class="flex flex-col my-4 mx-2 md:my-8 lg:my-12 lg:mx-28 p-2">
+      <header
+        class="text-Gray_0 text-2xl font-semibold leading-7 md:text-3xl lg:text-4xl"
+      >
+        <h1>Checkout</h1>
+      </header>
+      <main class="flex flex-col gap-2">
+        <div class="flex flex-wrap-reverse gap-5 justify-between p-2">
+          <form
+            action="#"
+            class="justify-start w-full md:w-auto flex flex-col gap-3"
+          >
+            <p class="font-semibold text-sm md:text-lg leading-4 text-Gray_1">
+              Contact infomation
+            </p>
+            <!-- Email -->
+            <div class="flex flex-col">
+              <label
+                for="email"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                >E-mail</label
+              >
+              <div
+                class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+              >
+                <span
+                  ><img
+                    src="assets/img/email.svg"
+                    alt="email"
+                    class="w-4 h-3 md:w-5 md:h-4"
+                /></span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-base w-full md:w-72 lg:w-96 focus:outline-none px-1 text-Gray_3"
+                  placeholder="Enter your email..."
+                />
+              </div>
+            </div>
+            <!-- Phone -->
+            <div class="flex flex-col">
+              <label
+                for="phone"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                >Phone</label
+              >
+              <div
+                class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+              >
+                <span
+                  ><img
+                    src="assets/img/phone.svg"
+                    alt="email"
+                    class="w-4 h-3 md:w-5 md:h-4"
+                /></span>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="phone"
+                  class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-base w-full md:w-72 lg:w-96 focus:outline-none px-1 text-Gray_3"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </div>
+            <p class="font-semibold text-sm md:text-lg leading-4 text-Gray_1">
+              Shipping address
+            </p>
+            <!-- Full name -->
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                >Full name</label
+              >
+              <div
+                class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+              >
+                <span
+                  ><img
+                    src="assets/img/person.svg"
+                    alt="email"
+                    class="w-4 h-3 md:w-5 md:h-4"
+                /></span>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-base w-full md:w-72 lg:w-96 focus:outline-none px-1 text-Gray_3 placeholder:text-Gray_1"
+                  placeholder="Rodney Cotton"
+                />
+              </div>
+            </div>
+            <!-- Address -->
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                >Address</label
+              >
+              <div
+                class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+              >
+                <span
+                  ><img
+                    src="assets/img/address.svg"
+                    alt="email"
+                    class="w-4 h-3 md:w-5 md:h-4"
+                /></span>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-base w-full md:w-72 lg:w-96 focus:outline-none px-1 text-Gray_3"
+                  placeholder="Your address.."
+                />
+              </div>
+            </div>
+            <!-- City -->
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                >City</label
+              >
+              <div
+                class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+              >
+                <span
+                  ><img
+                    src="assets/img/location.svg"
+                    alt="email"
+                    class="w-4 h-3 md:w-5 md:h-4"
+                /></span>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-base w-full md:w-72 lg:w-96 focus:outline-none px-1 text-Gray_3"
+                  placeholder="Your city.."
+                />
+              </div>
+            </div>
+            <!-- Country & Postal Code -->
+            <div class="flex justify-between gap-2 md:gap-1 lg:gap-0">
+              <!-- Country -->
+              <div class="flex flex-col">
+                <label
+                  for="country"
+                  class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                  >Country</label
+                >
+                <div
+                  class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 px-1 py-1"
+                >
+                  <span
+                    ><img
+                      src="assets/img/globe.svg"
+                      alt="email"
+                      class="w-4 h-3 md:w-5 md:h-4"
+                  /></span>
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    class="text-lg lg:text-2xl placeholder:text-sm md:placeholder:text-xs w-full md:w-32 lg:w-40 focus:outline-none px-1 text-Gray_3 lg:placeholder:text-base"
+                    placeholder="Your country.."
+                  />
+                  <span
+                    class="md:w-4 md:h-4 w-4 h-4 bg-Gray_5 flex justify-center items-center"
+                  >
+                    <img src="assets/img/arrow.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <!-- Postal Code -->
+              <div class="flex flex-col">
+                <label
+                  for="postal"
+                  class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+                  >Postal code</label
+                >
+                <div
+                  class="flex outline outline-1 rounded-md bg-white items-center justify-center outline-Gray_5 pl-1 py-1"
+                >
+                  <span
+                    ><img
+                      src="assets/img/postal.svg"
+                      alt="email"
+                      class="w-4 h-3 md:w-5 md:h-4"
+                  /></span>
+                  <input
+                    type="text"
+                    name="postal"
+                    id="postal"
+                    class="text-lg lg:text-2xl placeholder:text-xs md:placeholder:text-xs lg:placeholder:text-base w-full md:w-32 lg:w-40 focus:outline-none px-1 text-Gray_3"
+                    placeholder="Your postal code.."
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Save Info -->
+            <div class="flex items-start gap-2">
+              <input type="checkbox" name="save" id="save" />
+              <label
+                for="save"
+                class="flex text-xxs md:text-xs font-semibold leading-3 md:leading-4 text-Gray_2 mb-1"
+              >
+                Save this information for next time
+              </label>
+            </div>
+            <!-- Submit Button -->
+            <div class="flex items-center justify-end">
+              <button
+                class="font-semibold text-base text-white rounded-lg bg-Orange w-40 h-12"
+                type="submit"
+              >
+                Continue
+              </button>
+            </div>
+          </form>
+
+          <!-- Products -->
+          <div
+            class="bg-Gray_6 rounded-lg w-full md:w-auto m-2 py-6 md:px-4 md:py-6 flex flex-col gap-4"
+          >
+            <div class="flex flex-col justify-between w-full gap-4">
+              <div class="flex justify-center gap-4 px-3">
+                <img
+                  src="assets/img/photo1.png"
+                  alt="photo1"
+                  class="w-32 h-32 md:w-36 md:h-36 rounded-lg flex-1"
+                />
+                <div class="flex flex-col justify-between flex-1 items-center">
+                  <div class="flex flex-col gap-2 grow">
+                    <h1
+                      class="font-semibold text-sm text-Gray_0 leading-3 md:text-base md:leading-5"
+                    >
+                      Vintage Backbag
+                    </h1>
+                    <p class="flex items-center justify-around">
+                      <span
+                        class="font-semibold text-sm md:text-base md:leading-5 leading-4 text-Orange"
+                        >$54.99</span
+                      >
+                      <span
+                        class="font-semibold text-xxs leading-3 md:text-xs md:leading-4 text-Gray_0 line-through"
+                        >$94.99</span
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-lg border border-Gray_3 flex justify-around items-center py-2 w-full"
+                  >
+                    <button
+                      class="w-5 h-5 bg-Gray_5 flex justify-center items-center"
+                    >
+                      <span>-</span>
+                    </button>
+                    <span id="vintage-num" class="font-semibold text-base">
+                      1
+                    </span>
+                    <button
+                      class="w-5 h-5 bg-Gray_5 flex justify-center items-center"
+                    >
+                      <span>+</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center gap-4 px-3">
+                <img
+                  src="assets/img/photo2.png"
+                  alt="photo1"
+                  class="w-32 h-32 md:w-36 md:h-36 rounded-lg flex-1"
+                />
+                <div class="flex flex-col justify-between flex-1 items-center">
+                  <div class="flex flex-col gap-2 grow">
+                    <h1
+                      class="font-semibold text-sm text-Gray_0 leading-3 md:text-base md:leading-5"
+                    >
+                      Levi Shoes
+                    </h1>
+                    <p class="flex items-center justify-between gap-4">
+                      <span
+                        class="font-semibold text-sm md:text-base md:leading-5 leading-4 text-Orange"
+                        >$74.99</span
+                      >
+                      <span
+                        class="font-semibold text-xxs leading-3 md:text-xs md:leading-4 text-Gray_0 line-through"
+                        >$124.99</span
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-lg border border-Gray_3 flex justify-around items-center py-2 w-full"
+                  >
+                    <button
+                      class="w-5 h-5 bg-Gray_5 flex justify-center items-center"
+                    >
+                      <span>-</span>
+                    </button>
+                    <span id="vintage-num" class="font-semibold text-base">
+                      1
+                    </span>
+                    <button
+                      class="w-5 h-5 bg-Gray_5 flex justify-center items-center"
+                    >
+                      <span>+</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 px-3 md:px-0">
+                <div>
+                  <hr class="bg-Gray_4 mt-20 md:mt-24" />
+                  <p class="flex justify-between">
+                    <span
+                      class="font-semibold text-Gray_1 text-sm leading-4 md:text-base md:leading-5"
+                      >Shipping</span
+                    >
+                    <span
+                      class="font-semibold text-Gray_1 text-sm leading-4 md:text-base md:leading-5"
+                      >$19</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <hr class="bg-Gray_4" />
+                  <p class="flex justify-between">
+                    <span
+                      class="font-semibold text-Gray_1 text-sm leading-4 md:text-base md:leading-5"
+                      >Total</span
+                    >
+                    <span
+                      class="font-semibold text-Gray_1 text-sm leading-4 md:text-base md:leading-5"
+                      >$148.98</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p class="text-[#BDBDBD] font-semibold md:font-bold text-sm text-center">
+        created by
+        <a href="https://github.com/Zerebel" class="font-bold text-base"
+          >Zerebel</a
+        >
+        - devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>
